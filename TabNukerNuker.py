@@ -9,7 +9,7 @@ class TabNukerNukerEventListener (sublime_plugin.EventListener):
     ttts = None
 
     def on_text_command(self, view, command, args):
-        if (self.level == 0 and command not in settings.get('exclude_commands')):
+        if (self.level == 0 and command not in settings.get('exclude_commands') and not (command == 'insert' and args['characters'] == '\n')):
             self.ttts = view.settings().get('translate_tabs_to_spaces')
             view.settings().set('translate_tabs_to_spaces', False)
 
