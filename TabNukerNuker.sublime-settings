@@ -1,4 +1,4 @@
 {
     // A list of commands that do need translate_tabs_to_spaces enabled (Indentation related stuff)
-    "exclude_commands": ["indent", "reindent", "unindent", "paste_and_indent", "auto_indent_tag", "insert_best_completion", "left_delete", "run_macro_file"]
+    "exclude_commands": ["indent", "reindent", "unindent", "paste_and_indent", "auto_indent_tag", "insert_best_completion", "left_delete", "run_macro_file", "toggle_setting"]
 }
